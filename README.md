@@ -92,17 +92,14 @@ src/
 ## 🧪 Testing
 
 ```bash
-# Run all tests (unit + integration)
+# Run all tests (unit + integration) - suitable for CI/CD
 npm test
 
-# Run unit tests only
+# Run unit tests only (with watch mode)
 npm run test:unit
 
-# Run integration tests only
+# Run integration tests only (with watch mode)
 npm run test:workers
-
-# Run tests in watch mode
-npm run test:watch
 ```
 
 ### Test Status

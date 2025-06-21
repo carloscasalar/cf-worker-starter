@@ -1,13 +1,12 @@
 {
-  "name": "traveller-gear",
+  "name": "cf-worker-starter",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
-    "test": "npm run test:all",
-    "test:all": "npm run test:unit && npm run test:workers",
+    "test": "vitest --config ./vitest.config.unit.mts --run && vitest --config ./vitest.config.workers.mts --run",
     "test:unit": "vitest --config ./vitest.config.unit.mts",
     "test:workers": "vitest --config ./vitest.config.workers.mts",
     "cf-typegen": "wrangler types",
@@ -20,14 +19,14 @@
     "zod": "3.24.2"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.41",
-    "@cloudflare/workers-types": "^4.20250617.0",
+    "@cloudflare/vitest-pool-workers": "^0.8.43",
+    "@cloudflare/workers-types": "^4.20250620.0",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@types/common-tags": "1.8.4",
     "prettier": "3.5.3",
     "typescript": "5.8.2",
     "vitest": "^3.2.4",
-    "wrangler": "^4.20.3"
+    "wrangler": "^4.20.5"
   },
   "volta": {
     "node": "24.1.0"
