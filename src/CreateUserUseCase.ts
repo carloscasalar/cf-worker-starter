@@ -1,6 +1,6 @@
+import { User } from './User';
 import { UserRepository } from './UserRepository';
 import { ErrorAware } from './types/returnTypes';
-import { User } from './User';
 
 export interface CreateUserRequest {
     name: string;
@@ -29,4 +29,4 @@ export class CreateUserUseCase {
 
         return await this.userRepository.save(user);
     }
-} 
+}

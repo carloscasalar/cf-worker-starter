@@ -1,7 +1,8 @@
 import { D1Database } from '@cloudflare/workers-types';
-import { ErrorAware } from '../types/returnTypes';
+
 import { User } from '../User';
 import { UserRepository } from '../UserRepository';
+import { ErrorAware } from '../types/returnTypes';
 
 export class CloudflareUserRepository implements UserRepository {
     constructor(private readonly db: D1Database) {}
@@ -65,4 +66,4 @@ export class CloudflareUserRepository implements UserRepository {
             return { error: `Failed to find users: ${error}` };
         }
     }
-} 
+}
