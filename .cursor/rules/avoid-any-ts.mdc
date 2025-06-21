@@ -1,0 +1,6 @@
+---
+description: 
+globs: *.ts,*.tsx
+alwaysApply: false
+---
+Avoid the any type. Use unknown if type cannot be known.

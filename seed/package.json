@@ -1,0 +1,21 @@
+{
+    "name": "migrations",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "private": true,
+    "main": "index.ts",
+    "scripts": {
+        "schema:generate": "node --experimental-strip-types src/generate-schema-sql.ts",
+        "vectorize": "node --experimental-strip-types src/vectorize-index.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "volta": {
+        "node": "24.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^24.0.3"
+    }
+}

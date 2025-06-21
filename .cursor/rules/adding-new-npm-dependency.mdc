@@ -1,0 +1,6 @@
+---
+description: 
+globs: package.json
+alwaysApply: false
+---
+When adding a new dependency, try to pin the last version and avoid using the ^
