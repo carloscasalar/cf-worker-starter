@@ -17,15 +17,18 @@ wrangler d1 create cf-worker-starter-db
 # ✅ Created D1 database 'cf-worker-starter-db' (ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
 ```
 
-## Step 2: Update wrangler.toml
+## Step 2: Update wrangler.jsonc
 
-Add the database binding to your `wrangler.toml`:
+Add the database binding to your `wrangler.jsonc`:
 
-```toml
-[[d1_databases]]
-binding = "DB"
-database_name = "cf-worker-starter-db"
-database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"  # Use the ID from step 1
+```jsonc
+"d1_databases": [
+  {
+    "binding": "DB",
+    "database_name": "cf-worker-starter-db",
+    "database_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" // Use the ID from step 1
+  }
+]
 ```
 
 ## Step 3: Create Database Schema
@@ -128,9 +131,9 @@ wrangler d1 export cf-worker-starter-db --output=backup.sql
 
 ### Common Issues
 
-1. **Database not found**: Make sure the database ID in `wrangler.toml` matches the one created
+1. **Database not found**: Make sure the database ID in `wrangler.jsonc` matches the one created
 2. **Permission errors**: Ensure you're logged in with `wrangler login`
-3. **Binding errors**: Check that the binding name in `wrangler.toml` matches `src/env.ts`
+3. **Binding errors**: Check that the binding name in `wrangler.jsonc` matches `src/env.ts`
 
 ### Getting Help
 

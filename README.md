@@ -34,7 +34,7 @@ This project follows the **Ports and Adapters Architecture** pattern but with no
 
 3. **Set up your database** by following the instructions in [create-db.md](./create-db.md)
 
-4. **Configure your environment** in `wrangler.toml`
+4. **Configure your environment** in `wrangler.jsonc`
 
 5. **Run in development**:
    ```bash
