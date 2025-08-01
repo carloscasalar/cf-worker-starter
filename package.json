@@ -16,7 +16,7 @@
   "dependencies": {
     "common-tags": "1.8.2",
     "hono": "4.9.6",
-    "zod": "3.25.73"
+    "zod": "4.0.14"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.49",
