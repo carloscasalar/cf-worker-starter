@@ -15,18 +15,18 @@
   },
   "dependencies": {
     "common-tags": "1.8.2",
-    "hono": "4.8.4",
+    "hono": "4.9.5",
     "zod": "3.25.73"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.49",
-    "@cloudflare/workers-types": "^4.20250701.0",
+    "@cloudflare/workers-types": "^4.20250831.0",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@types/common-tags": "1.8.4",
     "prettier": "3.6.2",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vitest": "^3.2.4",
-    "wrangler": "^4.20.5"
+    "wrangler": "^4.33.1"
   },
   "volta": {
     "node": "24.1.0"
